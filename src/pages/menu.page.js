@@ -12,7 +12,7 @@ class Menu extends Page {
     }
 
     get authButton(){
-        return $(".login.subscribe")
+        return $(".login")
     }
   /**
    * a method to encapsule automation code to interact with the page
@@ -31,7 +31,7 @@ class Menu extends Page {
         await button.click()
     }
     open() {
-        return super.open("/menu");
+        return super.open("menu");
     }
 }
 

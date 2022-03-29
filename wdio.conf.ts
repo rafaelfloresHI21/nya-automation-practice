@@ -20,7 +20,7 @@ export const config: WebdriverIO.Config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './src/features/**/*.feature',
+        ["./src/features/Authentication.feature", "./src/features/SignUp.feature"],
     ],
     // Patterns to exclude.
     exclude: [
@@ -69,7 +69,7 @@ export const config: WebdriverIO.Config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'trace',
+    logLevel: 'debug',
     outputDir: path.join(__dirname, '/logs'),
     //
     // Set specific log levels per logger

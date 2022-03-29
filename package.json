@@ -30,7 +30,8 @@
     "test:lint": "eslint 'src/**/*.ts' 'test/**/*.js!(setup.js)'",
     "test:unit": "jest --config=jest.config.js --detectOpenHandles",
     "test:features": "wdio run wdio.BUILD.conf.ts",
-    "wdio": "wdio run wdio.conf.ts"
+    "wdio": "wdio run wdio.conf.ts",
+    "repl": "wdio repl chrome"
   },
   "dependencies": {},
   "devDependencies": {
